@@ -1,25 +1,26 @@
-class SchoppingCart = {
-  constructor(cart, items) {
-    this.cart = cart
+class ShoppingCart {
+  constructor(name, items) {
+    this.name = 'ShoppingCart'
     this.items = []
   }
-  cart.getItems(itemName, quantity, price) => {
-    let newItem = { name: this.itemName, quantity: this.quantity, pricePerUnit: this.pricePerUnit }
-    return items.push(newItem)
+
+  getItems() {return this.items}
+
+  addItems(itemName, quantity, price) {
+    let newItem = { name: `${itemName}`, quantity:
+    `${quantity}`, pricePerUnit: `${price}`  }
+    if (addItem(...args) === undefined) {
+      return this.items
+    } return this.items.push(newItem)
   }
-  cart.clear() => {return this.item.lenght = 0}
-  cart.clone() => {
-    const shoppingCart = new ShoppingCart(...args)
+
+  clear() {return this.items.length = 0}
+
+  clone() {
     return new ShoppingCart(...args)
   }
+
 }
-
-
-
-
-
-
-
 
 
 
