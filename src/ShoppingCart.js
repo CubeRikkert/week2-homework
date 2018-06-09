@@ -1,28 +1,34 @@
 class ShoppingCart {
-  constructor(name, items) {
-    this.name = 'ShoppingCart'
+  constructor(items) {
     this.items = []
   }
 
-  getItems() {return this.items}
+  getItems() {
+    return this.items
+  }
 
   addItems(itemName, quantity, price) {
     let newItem = { name: `${itemName}`, quantity:
     `${quantity}`, pricePerUnit: `${price}`  }
-    if (addItem(...args) === undefined) {
-      return this.items
-    } return this.items.push(newItem)
+    return this.items.push(newItem)
   }
 
-  clear() {return this.items.length = 0}
+  clear() {
+    return this.items.length = 0
+  }
 
   clone() {
-    return new ShoppingCart(...args)
+    let newClone = new ShoppingCart()
+    newClone.items = JSON.parse(JSON.stringify(this.items))
+    return newClone
   }
 
 }
 
-
-
+//const cart = new ShoppingCart()
+//cart.addItems('pizza', 2, 5.30)
+//const cart1 = cart.clone()
+//console.log(cart1)
+//
 
 module.exports.ShoppingCart = ShoppingCart
