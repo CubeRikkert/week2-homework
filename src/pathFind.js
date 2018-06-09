@@ -1,19 +1,26 @@
 function pathFind(path, object) {
-  let newObj = []
-  let currentPathKey = 0
-  let lookForIt = Object.keys(object).reduce((newObj, objKey) => {
-    if (objKey.value === path[0]) {
-      return newObj = [ objKey.value ]
-      currentPathKey++
-      console.log('first statement')
-    } if (objKey.value === path[currentPathKey]) {
-      return newObj = [ objKey.value ]
-      console.log('second statement')
-    } return NewObj
-    console.log('last statement')
-  })
-  return newObj
+  let result = []
+  if (object.key === path[0]) {
+    return
+  }
 }
+
+
+//function pathFind(path, object) {
+//  let newObj = ['newObj']
+//  let currentPathIndex = 0
+//  let lookForIt = Object.values(object).reduce((newObj, objValue) => {
+//    if (objValue === path[1]) {
+//      return newObj = [ `${objValue}` ]
+//      currentPathIndex++
+//    } if (objValue === path[currentPathIndex]) {
+//      return newObj = [ `${objValue}` ]
+//      console.log('second statement')
+//    } return NewObj
+//      console.log('last statement')
+//  })
+//  return newObj
+//}
 
 
 
