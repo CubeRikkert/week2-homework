@@ -47,4 +47,4 @@ class ShoppingCart {
 //cart.addItems('icecream', 3, 4.20)
 //console.log(cart1)
 
-//module.exports.ShoppingCart = ShoppingCart
+module.exports.ShoppingCart = ShoppingCart
