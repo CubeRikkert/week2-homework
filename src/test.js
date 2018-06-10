@@ -26,19 +26,10 @@ function pathFind(path, object) {
 
 }
 
-
-
-// I'm not sure what it is with yarn tests, but I can't get
-// them to work... my function is working though! 
-
-//test:
-//console.log(pathFind(['is', 'this', 'working'], {
-//  is: {
-//    this: {
-//      working: "Yes!"
-//    }
-//  }
-//}))
-
-
-module.export.pathFind = pathFind
+console.log(pathFind(['is', 'this', 'working'], {
+  is: {
+    this: {
+      working: "Yes!"
+    }
+  }
+}))
